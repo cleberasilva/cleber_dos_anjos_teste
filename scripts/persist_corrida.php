@@ -7,7 +7,7 @@
 
 
     mysqli_query($db,"INSERT INTO corridas (cpf_mot,cpf_pas,valor)
-    VALUES ('$motorista','$passageiro','$valor)");
+    VALUES ('$motorista','$passageiro','$valor')");
     
     if(mysqli_affected_rows($db) > 0){
         header("Location: ../pages/corridas.php");
